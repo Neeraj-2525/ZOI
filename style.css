@@ -8,6 +8,10 @@
     font-family: 'Tajawal', sans-serif;
 }
 
+::selection{
+    background-color: #71b85f;
+}
+
 .navbar {
     /* background-color: #71b85f; */
     /* backdrop-filter: blur(3px); */
@@ -104,6 +108,7 @@
 
 .text-container ul li{
     font-size: 1.2rem;
+    color: #ffffffcc;
 }
 
 .text-container .female-doctor{
@@ -132,3 +137,84 @@
 .table-img .img-ele img{
     width: 100%;
 }
+
+.whyZoiSection{
+    background-color: #71b85f;
+    padding-bottom: 50px;
+}
+
+.whyZoiSection .whyZoiHeader{
+    text-align: center;
+    padding: 30px;
+}
+.whyZoiHeader h2{
+    color: #ffffffcc;
+}
+
+
+.flexbox {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.flex {
+    width: 18%;
+    display: flex;
+    flex-direction: column;
+    padding: 4%;
+    justify-content: center;
+}
+
+.flexbottom {
+    border-bottom: 6px solid #FFFFFFcc;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+}
+
+.flextop {
+    border-top: 5px solid #FFFFFFcc;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+    position: relative;
+}
+
+.flextop:before {content: '';width: 1px;height: 100px;border-radius: 100%;background: #FFFFFF;position: absolute;left: 0;/* border-radius: 64px; */}
+
+.flextop:after {
+    content: '';
+    width: 1px;
+    height: 90px;
+    background: #FFFFFF;
+    position: absolute;
+    right: 0;
+    border-radius: 100%;
+}
+
+.flexbottom {
+    box-shadow: inset 0px -20px 0px #FFF;
+}
+
+.flex.flextop {
+    box-shadow: inset 0px 20px 0px #FFF;
+}
+
+.stepNumber {
+    width: 100%;
+    text-align: center;
+    border: 1px solid white;
+    border-radius: 50px 0px 50px 0px;
+    background: #FFFFFFcc;
+    color: black;
+}
+
+.imgbox img{
+    width: 100%;
+}
+
+.textbox p{
+    color: #ffffffcc;
+}
+
