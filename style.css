@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Tajawal', sans-serif;
+}
+
+.navbar {
+    /* background-color: #71b85f; */
+    /* backdrop-filter: blur(3px); */
+    transition: all 0.5s ease;
+}
+
+.scrolled {
+    background: #71b85f;
+    border-bottom: 1px solid white;
+}
+
+.nav-logo a{
+    color: #FFF;
+    font-size: 40px;
+    
+}
+
+.navbar-brand{
+    font-weight: 800;
+}
+
+.navbar-nav .nav-item{
+    padding: 0px 20px;
+}
+
+.navbar-nav li a{
+    font-size: 20px;
+}
+
+
+.dropdown-menu{
+    background: red;
+    backdrop-filter: blur(4px);
+}
+
+.dropdown-menu li a{
+    color: black;
+}
+
+.home-intro{
+    background-color: #71b85f;
+    height: fit-content;
+    padding-bottom: 50px;
+}
+
+.figure-container{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    /* height: 700px; */
+}
+
+.circular-figure{
+    background-color: #FFF;
+    width: 100%;
+    height: 100%;
+    border-left: #FFF 10px solid;
+    border-top: #FFF 10px solid;
+    border-bottom: #FFF 10px solid;
+    border-top-left-radius: 300px;
+    /* border-bottom-left-radius: 40%; */
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.img-container .carousel-caption{
+    text-shadow: 2px 2px 5px black,
+    1px -1px 5px black;
+}
+
+
+.home-intro .wrapper{
+    height: 100%;
+    padding: 120px 0px 0px 0px;
+}
+
+
+.text-container{
+    width: 48%;
+    color: #FFF;
+}
+
+.text-container h1{
+    font-weight: 600;
+    font-size: 3rem;
+}
+
+.text-container p{
+    font-size: 1.5rem;
+}
+
+.text-container ul li{
+    font-size: 1.2rem;
+}
+
+.text-container .female-doctor{
+    margin-top: 60px;
+}
+
+.female-doctor h2{
+    font-weight: 600;
+}
+
+.table-caption{
+    color: #000;
+    font-weight: 500;
+    font-size: 1.5rem;
+    margin: 20px 0;
+}
+
+.table-img{
+    justify-content: center;
+}
+
+.table-img .img-ele{
+    max-width: 60vw;
+}
+
+.table-img .img-ele img{
+    width: 100%;
+}
