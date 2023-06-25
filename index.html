@@ -20,6 +20,8 @@
     <link rel="manifest" href="favicon_io/">
     <!-- ******* FONT AWESOME ******* -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- ********* SCSS FILE ********** -->
+    <link rel="stylesheet" href="sass/style.css">
 </head>
 
 <body>
@@ -121,7 +123,7 @@
         </div>
     </section>
 
-    <div class="vsCost container">
+    <div class="vsCost container mb-5">
         <div class="table-caption">IVF COST IN DUBAI VS Zoi</div>
         <table class="w-80 table table-striped-columns table-bordered">
             <thead>
@@ -188,46 +190,29 @@
     </div>
 
     <div class="whyZoiSection container-fluid">
-        <span class="whyZoiHeader">
-            <h1 class="fst-italic text-white">WHY ZOI</h1>
-        </span>
-
-        <div class="flexbox">
-            <div class="flex flexbottom">
-                <h1 class="stepNumber">01</h1>
-                <div class="textbox">
-                    <p>Zoi is legally certified for IVF treatments</p>
+        <div class="card-container card border-0 m-4" style="max-width: 100%; background-color: #71b85f;">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <img src="assets/femaleImage.png" class="img-fluid rounded" alt="..." style="max-height: 400px;">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h1 class="card-title fw-bold">WHY ZOI</h1>
+                        <div class="card-text" style="color: #FFFFFFCC;">
+                            <ol class="custom-list custom-list-style">
+                                <li>Zoi is legally certified for IVF treatments</li>
+                                <li>Dr Yashodhara is certified in India and Internationally for Fertility Treatments</li>
+                                <li>The entire procedure of IVF will be done in Mumbai</li>
+                                <li>IVF success rates is highest for low AMH, Egg Donor Cycle</li>
+                                <li>References on request</li>
+                                <li>Internationally Procured IVF equipment and laboratory</li>
+                                <li>Internationally trained Embryologists</li>
+                                <li>Best designed IVF Centre, Lab and OT</li>
+                            </ol>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="flex flextop">
-                <h1 class="stepNumber">02</h1>
-                <div class="textbox">
-                    <p>Dr Yashodhara is certified in India and Internationally for Fertility
-                        Treatments</p>
-                </div>
-
-            </div>
-            <div class="flex flexbottom">
-                <h1 class="stepNumber">03</h1>
-                <div class="textbox">
-                    <p>The entire procedure of IVF will be done in Mumbai</p>
-                </div>
-            </div>
-            <div class="flex flextop">
-                <h1 class="stepNumber">04</h1>
-                <div class="textbox">
-                    <p>IVF success rates is highest for low AMH, Egg Donor Cycle</p>
-                </div>
-
-            </div>
-            <div class="flex flexbottom">
-                <h1 class="stepNumber">05</h1>
-                <div class="textbox">
-                    <p>Best designed IVF Centre, Lab and OT
-                    </p>
-                </div>
-            </div>
-
         </div>
     </div>
 
@@ -235,82 +220,94 @@
         <!--**This is the main container that contains the whole timeline. **-->
         <div class="panel panel-default">
             <div class="panel-heading">
-              <i class="fa fa-clock-o" aria-hidden="true"></i> IVF PROCESS
+                <i class="fa fa-clock-o" aria-hidden="true"></i> IVF PROCESS
             </div>
             <!-- /.panel-heading -->
             <div class="panel-body">
-              <ul class="timeline">
-                <li>
-                  <div class="timeline-badge">
-                   1
-                  </div>
-                  <div class="timeline-panel">
-                    <div class="timeline-heading">
-                      <h4 class="timeline-title">OVARIAN STIMULATION</h4>
-                      </p>
-                    </div>
-                    <div class="timeline-body">
-                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero laboriosam dolor perspiciatis omnis exercitationem. Beatae, officia pariatur? Est cum veniam excepturi. Maiores praesentium, porro voluptas suscipit facere rem dicta, debitis.</p>
-                    </div>
-                  </div>
-                </li>
-                <li class="timeline-inverted">
-                  <div class="timeline-badge bg-warning">
-                    2
-                  </div>
-                  <div class="timeline-panel">
-                    <div class="timeline-heading">
-                      <h4 class="timeline-title">EGG RETRIEVAL</h4>
-                    </div>
-                    <div class="timeline-body">
-                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem dolorem quibusdam, tenetur commodi provident cumque magni voluptatem libero, quis rerum. Fugiat esse debitis optio, tempore. Animi officiis alias, officia repellendus.</p>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium maiores odit qui est tempora eos, nostrum provident explicabo dignissimos debitis vel! Adipisci eius voluptates, ad aut recusandae minus eaque facere.</p>
-                    </div>
-                  </div>
-                </li>
-                <li>
-                  <div class="timeline-badge bg-danger">
-                    3
-                </div>
-                  <div class="timeline-panel">
-                    <div class="timeline-heading">
-                      <h4 class="timeline-title">SPERM COLLECTION & ICSI</h4>
-                    </div>
-                    <div class="timeline-body">
-                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus numquam facilis enim eaque, tenetur nam id qui vel velit similique nihil iure molestias aliquam, voluptatem totam quaerat, magni commodi quisquam.</p>
-                    </div>
-                  </div>
-                </li>
-                <li class="timeline-inverted">
-                    <div class="timeline-badge bg-info">
-                        4
-                    </div>
-                  <div class="timeline-panel">
-                    <div class="timeline-heading">
-                      <h4 class="timeline-title">POSSIBLE GENETIC TESTING</h4>
-                    </div>
-                    <div class="timeline-body">
-                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates est quaerat asperiores sapiente, eligendi, nihil. Itaque quos, alias sapiente rerum quas odit! Aperiam officiis quidem delectus libero, omnis ut debitis!</p>
-                    </div>
-                  </div>
-                </li>
-                <li>
-                    <div class="timeline-badge bg-success">
-                        5
-                    </div>
-                  <div class="timeline-panel">
-                    <div class="timeline-heading">
-                      <h4 class="timeline-title">EMBRYO TRANSFER</h4>
-                    </div>
-                    <div class="timeline-body">
-                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis minus modi quam ipsum alias at est molestiae excepturi delectus nesciunt, quibusdam debitis amet, beatae consequuntur impedit nulla qui! Laborum, atque.</p>
-                    </div>
-                  </div>
-                </li>
-              </ul>
+                <ul class="timeline">
+                    <li>
+                        <div class="timeline-badge bg-black opacity-50">
+                            1
+                        </div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4 class="timeline-title">OVARIAN STIMULATION</h4>
+                                </p>
+                            </div>
+                            <div class="timeline-body">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero laboriosam dolor
+                                    perspiciatis omnis exercitationem. Beatae, officia pariatur? Est cum veniam
+                                    excepturi. Maiores praesentium, porro voluptas suscipit facere rem dicta, debitis.
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-badge bg-warning">
+                            2
+                        </div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4 class="timeline-title">EGG RETRIEVAL</h4>
+                            </div>
+                            <div class="timeline-body">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem dolorem quibusdam,
+                                    tenetur commodi provident cumque magni voluptatem libero, quis rerum. Fugiat esse
+                                    debitis optio, tempore. Animi officiis alias, officia repellendus.</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium maiores odit qui
+                                    est tempora eos, nostrum provident explicabo dignissimos debitis vel! Adipisci eius
+                                    voluptates, ad aut recusandae minus eaque facere.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-badge bg-danger">
+                            3
+                        </div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4 class="timeline-title">SPERM COLLECTION & ICSI</h4>
+                            </div>
+                            <div class="timeline-body">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus numquam facilis
+                                    enim eaque, tenetur nam id qui vel velit similique nihil iure molestias aliquam,
+                                    voluptatem totam quaerat, magni commodi quisquam.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-badge bg-info">
+                            4
+                        </div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4 class="timeline-title">POSSIBLE GENETIC TESTING</h4>
+                            </div>
+                            <div class="timeline-body">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates est quaerat
+                                    asperiores sapiente, eligendi, nihil. Itaque quos, alias sapiente rerum quas odit!
+                                    Aperiam officiis quidem delectus libero, omnis ut debitis!</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-badge bg-success">
+                            5
+                        </div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4 class="timeline-title">EMBRYO TRANSFER</h4>
+                            </div>
+                            <div class="timeline-body">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis minus modi quam ipsum
+                                    alias at est molestiae excepturi delectus nesciunt, quibusdam debitis amet, beatae
+                                    consequuntur impedit nulla qui! Laborum, atque.</p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
             </div>
-            <!-- /.panel-body -->
-          </div>
+        </div>
     </div>
     </section>
     </div>
