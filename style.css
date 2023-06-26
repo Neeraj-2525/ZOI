@@ -329,3 +329,54 @@
         border-left-width: 0;
     }
 }
+
+
+/* ***********reviews-container********* */
+.reviews-viewport{
+    /* display: flex; */
+    gap: 50px;
+}
+
+.reviews-container{
+    background-color: aqua;
+}
+
+.reviews-slide{
+    /* margin: 0 5rem; */
+    /* background-color: purple; */
+}
+
+.user-container{
+    background-color: #FFF8BD;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 10% 0;
+}
+
+.user{
+    line-height: 34px;
+    font-size: 28px;
+    width: 90%;
+}
+
+.reviews-prev {
+    display: none;
+    padding: 50px;
+    background-color: red;
+    /* Other button styles */
+  }
+
+.reviews-prev.show {
+    display: block;
+}
+
+/* ********* INDIAN LAWS CONTAINER *********** */
+.indianLaws-container{
+    background-color: #71b85f;
+}
+
+/* ********* OUR SERVICES ********** */
+.services-container{
+    background-color: #71b85f;
+}

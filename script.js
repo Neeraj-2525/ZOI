@@ -10,3 +10,16 @@ window.addEventListener('scroll', function() {
     }
   });
 
+
+  // ******* horizontal bar ********
+
+  const prevScrollButton = document.getElementById('prevScrollButton');
+
+  window.addEventListener('scroll', () => {
+    if (window.scrollX > 0) {
+      prevScrollButton.classList.add('show');
+    } else {
+      prevScrollButton.classList.remove('show');
+    }
+  });
+  
