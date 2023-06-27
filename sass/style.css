@@ -1,9 +1,9 @@
 .custom-list {
   counter-reset: new-counter;
-  list-style: none;
+  margin-left: 16%;
 }
 .custom-list li {
-  color: #FFFFFFcc;
+  color: #777;
   position: relative;
   padding-left: 20px;
   line-height: 2em;
@@ -13,16 +13,16 @@
   content: counter(new-counter, decimal);
   counter-increment: new-counter;
   position: absolute;
-  color: #5c5c5c;
+  color: #fff;
   top: 0;
-  left: -34px;
+  left: -27px;
   font-size: 0.7em;
   font-weight: 800;
   line-height: 2.8em;
 }
 .custom-list.custom-list-style li {
   line-height: 2em;
-  font-size: 18px;
+  font-size: 28px;
 }
 .custom-list.custom-list-style li:before {
   position: absolute;
@@ -30,15 +30,15 @@
   color: #ccc;
   font-size: 32px;
   content: "";
-  width: 20px;
-  height: 30px;
+  width: 40px;
+  height: 50px;
   z-index: 0;
 }
 .custom-list.custom-list-style li:nth-child(odd):before {
   transform: translateY(3px) skewX(30deg);
-  background: #FFFFFFcc;
+  background: green;
 }
 .custom-list.custom-list-style li:nth-child(even):before {
   transform: translateY(3px) skewX(-30deg);
-  background: #ffffff;
+  background: cornflowerblue;
 }/*# sourceMappingURL=style.css.map */
