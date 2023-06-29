@@ -10,7 +10,6 @@
     <!-- ******* BOOTSTRAP ********* -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-
     <!-- ******* FAVICON ********* -->
     <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
@@ -20,15 +19,6 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- ********* SCSS FILE ********** -->
     <link rel="stylesheet" href="sass/style.css">
-    <!-- ********* SLICK CSS ********* -->
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"
-        integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
-        integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
-    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
-    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
 </head>
 
 <body>
@@ -196,28 +186,27 @@
         </div>
     </div>
 
-    <div class="whyZoiSection container-fluid">
-        <div class="card-container card border-0 m-4" style="max-width: 100%; background-color: #71b85f;">
+    <div class="whyZoiSection container-fluid p-5">
+        <div class="card mb-3 border-1 border-white" style="max-width: 100vw;">
             <div class="row g-0">
-                <div class="col-md-4">
-                    <img src="assets/femaleImage.png" class="img-fluid rounded" alt="..." style="max-height: 400px;">
+                <div class="col-md-4 whyZoiImage">
+                    <img src="assets/femaleImage.png" class="img-fluid rounded-start" alt="...">
                 </div>
                 <div class="col-md-8">
                     <div class="card-body">
-                        <h1 class="card-title fw-bold">WHY ZOI</h1>
-                        <div class="card-text" style="color: #FFFFFFCC;">
-                            <ol class="custom-list custom-list-style">
-                                <li>Zoi is legally certified for IVF treatments</li>
-                                <li>Dr Yashodhara is certified in India and Internationally for Fertility Treatments
-                                </li>
-                                <li>The entire procedure of IVF will be done in Mumbai</li>
-                                <li>IVF success rates is highest for low AMH, Egg Donor Cycle</li>
-                                <li>References on request</li>
-                                <li>Internationally Procured IVF equipment and laboratory</li>
-                                <li>Internationally trained Embryologists</li>
-                                <li>Best designed IVF Centre, Lab and OT</li>
-                            </ol>
-                        </div>
+                        <h1 class="card-title text-white">WHY ZOI</h1>
+                        <p class="card-text">
+                        <ol class="custom-list text-white fs-5 lh-2 text-opacity-75">
+                            <li>Zoi is legally certified for IVF treatments</li>
+                            <li>Dr Yashodhara is certified in India and Internationally for Fertility Treatments</li>
+                            <li>The entire procedure of IVF will be done in Mumbai</li>
+                            <li>IVF success rates is highest for low AMH, Egg Donor Cycle</li>
+                            <li>References on request</li>
+                            <li>Internationally Procured IVF equipment and laboratory</li>
+                            <li>Internationally trained Embryologists</li>
+                            <li>Best designed IVF Centre, Lab and OT</li>
+                        </ol>
+                        </p>
                     </div>
                 </div>
             </div>
@@ -319,134 +308,152 @@
     </div>
 
     <div class="reviews container-fluid pt-4">
-        <h1 class="text-black fw-medium bg-body-secondary mb-5 text-center" style="font-size: 3rem;">Some Of Our Reviews
+        <h1 class="text-white fw-bold mb-5 text-center" style="font-size: 3rem;">Some Of Our Reviews
         </h1>
-        <div id="slider-container">
-            <div id="main-slider">
-                <div id="side-1" class="slide card active text-center">
-                    <div class="card-body">
-                        <h5 id="title-lavado" class="card-title">
-                            Alice
-                        </h5>
-                        <p class="card-text text-center">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi molestias delectus quos! Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, perferendis?
-                        </p>
-                        <div class="text-center">
-                            <a class="btn-contact" href="javascript:void(0)">Go somewhere</a>
-                        </div>
-                    </div>
+
+        <div class="d-flex flex-row flex-nowrap overflow-auto card-deck" id="cardContainer">
+            <!-- %%%%%% CARD %%%%%% -->
+            <div class="card shadow card-body m-3 active">
+                <div class="card-img-top text-center">
+                    <img src="assets/person_1.jpg" class="rounded img-fluid" alt="">
                 </div>
-                <div id="side-2" class="slide card text-center">
-                    <div class="card-body">
-                        <h5 id="title-anticorrupcion" class="card-title">
-                            Zoe
-                        </h5>
-                        <p class="card-text text-center">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi molestias delectus quos! Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, perferendis?
-                        </p>
-                        <div class="text-center">
-                            <a class="btn-contact" href="javascript:void(0)">Go somewhere</a>
-                        </div>
-                    </div>
+                <div class="card-title mt-3">
+                    <h5>Bryan</h5>
                 </div>
-                <div id="side-3" class="slide card text-center">
-                    <div class="card-body">
-                        <h5 id="title-sumariales" class="card-title">
-                            Elizabath
-                        </h5>
-                        <p class="card-text text-center">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi molestias delectus quos! Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, perferendis?
-                        </p>
-                        <div class="text-center">
-                            <a class="btn-contact" href="javascript:void(0)">Go somewhere</a>
-                        </div>
-                    </div>
+                <div class="card-text">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, sequi adipisci? Doloremque
+                        similique magni dolores odit eum, architecto ullam ipsa!
+                    </p>
                 </div>
-                <div id="side-4" class="slide card text-center">
-                    <div class="card-body">
-                        <h5 id="title-adhoc" class="card-title">
-                            Lora
-                        </h5>
-                        <p class="card-text text-center">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi molestias delectus quos! Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, perferendis?
-                        </p>
-                        <div class="text-center">
-                            <a class="btn-contact" href="javascript:void(0)">Go somewhere</a>
-                        </div>
-                    </div>
-                </div>
-                <div id="side-5" class="slide card text-center">
-                    <div class="card-body">
-                        <h5 id="title-duediligence" class="card-title">
-                            Bitny
-                        </h5>
-                        <p class="card-text text-center">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi molestias delectus quos! Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, perferendis?
-                        </p>
-                        <div class="text-center">
-                            <a class="btn-contact" href="javascript:void(0)">Go somewhere</a>
-                        </div>
-                    </div>
-                </div>
-                <div id="side-6" class="slide card text-center">
-                    <div class="card-body">
-                        <h5 id="title-capacitaciones" class="card-title">
-                            Sindy
-                        </h5>
-                        <p class="card-text text-center">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi molestias delectus quos! Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, perferendis?
-                        </p>
-                        <div class="text-center">
-                            <a class="btn-contact" href="javascript:void(0)">Go somewhere</a>
-                        </div>
-                    </div>
-                </div>
-                
             </div>
-            <div class="slide-indicator-container"></div>
-            <div class="slider-controls">
-                <div id="pre" class="slider-btn">
-                    <i class="fa fa-chevron-left" aria-hidden="true"></i>
+            <!-- %%%%%% CARD %%%%%% -->
+            <div class="card shadow card-body m-3 active">
+                <div class="card-img-top text-center">
+                    <img src="assets/person_2.jpg" class="rounded img-fluid" alt="">
                 </div>
-                <div id="nex" class="slider-btn">
-                    <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                <div class="card-title mt-3">
+                    <h5>Bryan</h5>
+                </div>
+                <div class="card-text">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, sequi adipisci? Doloremque
+                        similique magni dolores odit eum, architecto ullam ipsa!
+                    </p>
+                </div>
+            </div>
+            <!-- %%%%%% CARD %%%%%% -->
+            <div class="card shadow card-body m-3 active">
+                <div class="card-img-top text-center">
+                    <img src="assets/person_3.jpg" class="rounded img-fluid" alt="">
+                </div>
+                <div class="card-title mt-3">
+                    <h5>Bryan</h5>
+                </div>
+                <div class="card-text">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, sequi adipisci? Doloremque
+                        similique magni dolores odit eum, architecto ullam ipsa!
+                    </p>
+                </div>
+            </div>
+            <!-- %%%%%% CARD %%%%%% -->
+            <div class="card shadow card-body m-3 active">
+                <div class="card-img-top text-center">
+                    <img src="assets/person_4.jpg" class="rounded img-fluid" alt="">
+                </div>
+                <div class="card-title mt-3">
+                    <h5>Bryan</h5>
+                </div>
+                <div class="card-text">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, sequi adipisci? Doloremque
+                        similique magni dolores odit eum, architecto ullam ipsa!
+                    </p>
+                </div>
+            </div>
+            <!-- %%%%%% CARD %%%%%% -->
+            <div class="card shadow card-body m-3 active">
+                <div class="card-img-top text-center">
+                    <img src="assets/person_5.jpg" class="rounded img-fluid" alt="">
+                </div>
+                <div class="card-title mt-3">
+                    <h5>Bryan</h5>
+                </div>
+                <div class="card-text">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, sequi adipisci? Doloremque
+                        similique magni dolores odit eum, architecto ullam ipsa!
+                    </p>
+                </div>
+            </div>
+            <!-- %%%%%% CARD %%%%%% -->
+            <div class="card shadow card-body m-3 active">
+                <div class="card-img-top text-center">
+                    <img src="assets/person_2.jpg" class="rounded img-fluid" alt="">
+                </div>
+                <div class="card-title mt-3">
+                    <h5>Bryan</h5>
+                </div>
+                <div class="card-text">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, sequi adipisci? Doloremque
+                        similique magni dolores odit eum, architecto ullam ipsa!
+                    </p>
+                </div>
+            </div>
+            <!-- %%%%%% CARD %%%%%% -->
+            <div class="card shadow card-body m-3 active">
+                <div class="card-img-top text-center">
+                    <img src="assets/person_1.jpg" class="rounded img-fluid" alt="">
+                </div>
+                <div class="card-title mt-3">
+                    <h5>Bryan</h5>
+                </div>
+                <div class="card-text">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, sequi adipisci? Doloremque
+                        similique magni dolores odit eum, architecto ullam ipsa!
+                    </p>
                 </div>
             </div>
         </div>
     </div>
 
 
-    <div class="indianLaws-container">
-        <h1>hey there here im gonna write indian laws</h1>
+    <div class="indianLaws container p-5">
+        <div class="indianLawsWrapper shadow text-center rounded p-4">
+            <h1>What are the Indian Laws applicable for you</h1>
+            <ul>
+                <li>
+                    <i class="fa fa-caret-right text-warning" aria-hidden="true" style="font-size: 2em;"></i>
+                    You have to be a married couple. Need a marriage certificate
+                </li>
+                <li>
+                    <i class="fa fa-caret-right text-warning" aria-hidden="true" style="font-size: 2em;"></i>
+                    Wife should be less than 50 years and man should be less than 55 years
+                </li>
+                <li>
+                    <i class="fa fa-caret-right text-warning" aria-hidden="true" style="font-size: 2em;"></i>
+                    Have valid medical visa to enter India
+                </li>
+            </ul>
+        </div>
     </div>
 
     <div class="services-container container-fluid">
         <div class="services">
-
+            
         </div>
     </div>
     </section>
     </div>
 
-    <!-- <div  style="position: absolute; background-color: #71b85f; padding: 20px; justify-content: center; align-items: center; display: flex; right: 0; border-radius: 50%;"></div> -->
 
     <!-- ******** BOOTSTRAP js******** -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
         crossorigin="anonymous"></script>
-
-    <!-- ********* SLICK JS ********** -->
-    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src=" http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script type="text/javascript" src="slick/slick.min.js"></script>
-    <script>
-        $('.reviews-viewport').slick({
-            infinite: true,
-            slidesToShow: 3,
-            slidesToScroll: 3,
-            prevArrow: '<button type="button" class="slick-custom-arrow slick-prev" style="position: absolute; background-color: red;"> < </button>',
-            nextArrow: '<button type="button" class="slick-custom-arrow slick-next bg-secondary" style="position: absolute; padding: 20px; justify-content: center; align-items: center; display: flex; right: 0; border-radius: 50%;"> > </button>',
-        });
 
     </script>
     <!-- ********* main js ********** -->

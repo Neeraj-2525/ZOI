@@ -146,8 +146,12 @@
     padding: 5px 0;
 }
 
-.card-body h1 {
-    color: #FFF;
+.whyZoiSection .card {
+    background-color: transparent;
+}
+
+.whyZoiSection .whyZoiImage {
+    text-align: center;
 }
 
 
@@ -333,149 +337,42 @@
 
 /* ***********reviews-container********* */
 .reviews {
-    overflow-x: hidden;
-}
-
-#slider-container {
-    max-height: 100vh;
-}
-
-#main-slider {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    width: 200vw;
-    margin-top: 6rem;
-}
-
-#main-slider .slide {
-    height: auto;
-    width: 18rem;
-    transition: all 0.5s;
-    background-color: #fff;
-}
-
-.slide.card {
-    border-radius: 10px;
-}
-
-.slide .card-title {
-    font-size: 0.9rem;
-}
-
-.slide .card-body {
-    padding: 0.8rem;
-}
-
-.slide img {
-    border-radius: 10px 10px 0 0;
-    filter: grayscale(100%);
-    transition: all 1s;
-}
-
-.slide .card-body p {
-    font-size: 0.7rem;
-    margin-bottom: 0.5rem;
-    transition: all 1s;
-    opacity: 0;
-}
-
-.slide.active img {
-    filter: none;
-}
-
-.slide.active .card-body p {
-    opacity: 1;
-}
-
-#side-1 {
-    z-index: 99;
-    transform: translateX(100%) scale(1.5);
-}
-
-.slider-controls {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin: 0 auto 3rem auto;
-}
-
-.slider-btn {
-    border-radius: 50px;
-    height: 2rem;
-    width: 3rem;
-    border: 1px solid #6e6e6e;
-    font-size: 15px;
-    color: #6e6e6e;
-    text-align: center;
-    line-height: 30px;
-    padding-top: 0.1rem;
-    margin: 0.5rem;
-}
-
-.slider-btn:hover {
-    cursor: pointer;
-    color: #fff;
+    /* overflow-x: hidden; */
     background-color: #71b85f;
-    border: none;
 }
 
-.slide-indicator-container {
-    margin: 6rem auto 1rem auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+.reviews .card {
+    min-width: 20rem;
 }
 
-.slide-indicator {
-    border-radius: 50%;
-    height: 0.5rem;
-    width: 0.5rem;
-    margin: 0.2rem;
-    border: 1px solid #6e6e6e;
+.card-deck {
+    /* padding: 0 32%; */
+    scroll-behavior:smooth;
+    scrollbar-3dlight-color: transparent;
 }
 
-.slide-indicator:hover {
-    cursor: pointer;
+.card-deck::-webkit-scrollbar{
+    width: 0;
 }
 
-.slide-indicator.active {
-    background-color: #5bffc0;
-    border-color: #5bffc0;
+.card-deck .card:hover {
+    transform: scale(1.05);
+    transition: all 0.4s ease-in-out;
 }
-
-.btn-contact {
-    background-color: #fff;
-    border: 1px solid #b3b3b3;
-    border-radius: 50px;
-    color: #a5a5a5;
-    padding: 0.3rem 0.5rem;
-    font-size: 0.6rem;
-    margin-bottom: 0.5rem;
-    transition: all 1s;
-    text-decoration: none;
-}
-
-.slide.active .btn-contact {
-    background-color: #71b85f;
-    color: #fff;
-    border: transparent;
-}
-
-.btn-contact:hover,
-.slide.active .btn-contact:hover {
-    text-decoration: none;
-    color: #000;
-    background-color: #83ffa2;
-    border: transparent;
-}
-
-
 
 /* ********* INDIAN LAWS CONTAINER *********** */
-.indianLaws-container {
-    background-color: #71b85f;
+.indianLaws ul {
+    list-style: none;
+    text-align: center;
 }
+
+.indianLaws ul li{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
 
 /* ********* OUR SERVICES ********** */
 .services-container {
