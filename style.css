@@ -9,6 +9,23 @@
     font-family: 'Tajawal', sans-serif;
 }
 
+body::-webkit-scrollbar-track
+{
+	/* border: 1px solid black; */
+	background-color: #FFF;
+}
+
+body::-webkit-scrollbar
+{
+	width: 10px;
+	background-color: #F5F5F5;
+}
+
+body::-webkit-scrollbar-thumb
+{
+	background-color: #71b85f;	
+}
+
 ::selection {
     background-color: #71b85f;
 }
@@ -22,7 +39,7 @@
 .scrolled {
     background: #71b85f;
     border-bottom: 1px solid white;
-    
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
 
 .nav-logo a {
@@ -682,4 +699,32 @@ ol.text-white li::before {
 
 .article-content ul li{
     font-size: 18px;
+}
+
+
+.contact-headings h6 {
+    color: #71b85f;
+}
+
+.contact-headings h6::before{
+    content: "";
+    display: inline-block;
+    width: 40px;
+    border-top: 3px solid #71b85f;
+    margin-bottom: 3px;
+    margin-right: 15px;
+}
+
+.contact-headings h6::after{
+    content: "";
+    display: inline-block;
+    width: 40px;
+    border-top: 3px solid #71b85f;
+    margin-bottom: 3px;
+    margin-left: 15px;
+}
+
+.contact-headings h1{
+    font-size: 3rem;
+    padding: 10px 0 80px 0;
 }
