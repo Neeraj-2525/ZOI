@@ -10,6 +10,22 @@ window.addEventListener('scroll', function () {
   }
 });
 
+let previousScrollPosition = window.scrollY;
+
+window.onscroll = function () {
+  const currentScrollPosition = window.scrollY;
+
+  if (previousScrollPosition > currentScrollPosition) {
+    // Scrolling up
+    document.querySelector("nav").classList.remove("hide-navbar");
+  } else {
+    // Scrolling down
+    document.querySelector("nav").classList.add("hide-navbar");
+  }
+
+  previousScrollPosition = currentScrollPosition;
+};
+
 
 // ******* horizontal bar ********
 // document.addEventListener("DOMContentLoaded", function() {

@@ -31,15 +31,18 @@ body::-webkit-scrollbar-thumb
 }
 
 .navbar {
-    /* background-color: #71b85f; */
+    background-color: #71b85f;
     /* backdrop-filter: blur(3px); */
-    transition: all 0.5s ease;
+    transition: all 0.5s ease-in-out;
 }
 
 .scrolled {
-    background: #71b85f;
     border-bottom: 1px solid white;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.hide-navbar{
+    transform: translateY(-100px);
 }
 
 .nav-logo a {
@@ -70,72 +73,91 @@ body::-webkit-scrollbar-thumb
     color: black;
 }
 
+/* ********** caraousel ********** */
+.carausel-section{
+    margin-top: 88px;
+}
+
+
+/* ******home intro******** */
 .home-intro {
-    background-color: #71b85f;
-    height: fit-content;
-    padding-bottom: 50px;
+    /* background-color: #71b85f; */
 }
 
-.figure-container {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 50%;
-    /* height: 700px; */
+.home-intro-left{
+    background-image: url(assets/baby.svg);
+    background-repeat: no-repeat;
+    background-position-x: right;  
 }
 
-.circular-figure {
-    background-color: #FFF;
+.home-intro-left .text-container{
     width: 100%;
     height: 100%;
-    border-left: #FFF 10px solid;
-    border-top: #FFF 10px solid;
-    border-bottom: #FFF 10px solid;
-    border-top-left-radius: 300px;
-    /* border-bottom-left-radius: 40%; */
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+    padding: 150px 50px 0 100px;
+    background-image: linear-gradient(to bottom, #ffffff75 10%, #ffffffb9);
 }
 
-.img-container .carousel-caption {
-    text-shadow: 2px 2px 5px black,
-        1px -1px 5px black;
-}
-
-
-.home-intro .wrapper {
-    height: 100%;
-    padding: 120px 0px 0px 0px;
-}
-
-
-.text-container {
-    width: 48%;
-    color: #FFF;
-}
-
-.text-container h1 {
-    font-weight: 600;
+.home-intro-left .text-container h1{
     font-size: 3rem;
 }
 
-.text-container p {
+.home-intro-left .text-container p{
     font-size: 1.5rem;
 }
 
-.text-container ul li {
-    font-size: 1.2rem;
-    color: #ffffffcc;
+
+.home-intro-right .container::-webkit-scrollbar-track
+{
+	/* border: 1px solid #71b85f; */
+	background-color: #FFF;
 }
 
-.text-container .female-doctor {
-    margin-top: 60px;
+
+.home-intro-right .container::-webkit-scrollbar
+{
+    height: 5px;
+	background-color: #F5F5F5;
 }
 
-.female-doctor h2 {
-    font-weight: 600;
+
+.home-intro-right .container::-webkit-scrollbar-thumb
+{
+	background-color: #71b85f;	
+    border-radius: 10px;
+}
+
+.home-intro-right h1{
+    font-size: 3rem;
+}
+
+.home-intro-right .card{
+    background-color: #d3ffc6ce;
+    min-width: 16vw;
+    padding: 50px 0px 70px 0px;
+}
+
+.home-intro-right .card .card-img{
+    width:140px;
+    height: 140px;
+    background-color: #FFF;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.home-intro-right .card .card-img img{
+    width: 60%;
+}
+
+.home-intro-right .card .card-text{
+    font-weight: 500;
+}
+
+
+.carausel-section .carousel-item img{
+    /* height: 700px; */
 }
 
 .table-caption {
