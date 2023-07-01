@@ -753,6 +753,12 @@ a:active {
 .contact-section .card .card-body p{
     color: #71b85f;
     font-size: 18px;
+    transition: all 0.2s ease-in-out;
+    text-decoration: none;
+}
+
+.contact-section .card .card-body p:hover{
+    color: rgb(87, 177, 219);
 }
 
 .contact-icon{
@@ -779,8 +785,18 @@ a:active {
     transition: all 0.3s ease-in-out;
 }
 
+.contact-section .card .card-body:hover{
+    cursor: pointer;
+}
+
+
+
 .contact-section .card:hover .contact-icon .contact-icon-outer{
     box-shadow:1px 0px 10px #9797973f, 0px 1px 10px #9797973f;
+}
+
+.contact-icon .contact-icon-outer:hover{
+    cursor:default;
 }
 
 footer .location{
