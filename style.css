@@ -776,6 +776,11 @@ a:active {
     font-size: 2rem;
     background-color: #FFF;
     color: #71b85f;
+    transition: all 0.3s ease-in-out;
+}
+
+.contact-section .card:hover .contact-icon .contact-icon-outer{
+    box-shadow:1px 0px 10px #9797973f, 0px 1px 10px #9797973f;
 }
 
 footer .location{
@@ -799,6 +804,7 @@ footer .social-icon{
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: all 0.2s ease-in-out;
 }
 
 footer .social-icon:hover{
@@ -813,4 +819,9 @@ footer a, footer p{
     text-decoration: none;
     font-weight: 300;
     font-size: 20px;
+    transition: all 0.2s ease-in-out;
+}
+
+footer a:hover{
+    color: #71b85f;
 }
