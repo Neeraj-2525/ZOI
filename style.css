@@ -11,7 +11,7 @@
 
 body::-webkit-scrollbar-track
 {
-	/* border: 1px solid black; */
+	/* border: 1px solid #71b85f; */
 	background-color: #FFF;
 }
 
@@ -158,18 +158,28 @@ body::-webkit-scrollbar-thumb
 }
 
 
-/* ********** female img plus WHY zoi ********** */
-.whyZoiSection {
+/* ********** Dr yashodhara ********** */
+
+.best-doctor{
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+.best-doctor .dr-yashodhra-img{
+    width: 230px;
+}
+
+
+.best-doctor .doctor-text-container{
+    margin: 20px 0;
+    padding: 20px 60px;
     background-color: #71b85f;
-    padding: 5px 0;
 }
 
-.whyZoiSection .card {
-    background-color: transparent;
-}
-
-.whyZoiSection .whyZoiImage {
-    text-align: center;
+.best-doctor .doctor-text-container p{
+    font-size: 20px;
 }
 
 
@@ -396,7 +406,7 @@ body::-webkit-scrollbar-thumb
     background-color: #71b85f;
 } */
 
-section {
+.we-offer-area {
     padding: 60px 0;
     min-height: 100vh;
 }
@@ -660,7 +670,7 @@ a:active {
 
 
 
-ol.text-white li::before {
+.selection-main ol.text-white li::before {
     content: "";
     display: inline-block;
     width: 14px;
@@ -670,35 +680,34 @@ ol.text-white li::before {
     background-image: linear-gradient(to right bottom, rgb(255, 208, 80) 30%, rgb(255, 255, 255));
 }
 
-.article-section .article-heading-wrapper{
-    background-image: url(assets/headBack.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
 
-.article-heading h1{
-    font-size: 4rem;
-    text-shadow: 1px 1px 5px rgb(80, 80, 80);
-}
-
-.article-img{
-    margin-left: 20%;
-}
-
-.article-content h1{
+.article-section .article-heading h1{
     font-size: 3rem;
+    /* padding: 10px 0 80px 0; */
 }
 
-.article-content p{
-    font-size: 18px;
+.article-card-text{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    align-items:end;
+    color: #FFF;
+    background-color: rgba(58, 58, 58, 0.576);
+    transition: all 0.3s ease-in-out;
 }
 
-.article-content img{
-    border-radius: 100%;
+.article-section .card{
+    display: flex;
+    justify-content: space-between;
 }
 
-.article-content ul li{
-    font-size: 18px;
+.article-section .card:hover .article-card-text{
+    background-color: rgba(58, 58, 58, 0.4);
+    color: #fcfcfc;
+}
+
+.article-card-text h3:hover{
+    color: #ffcf31;
 }
 
 
@@ -727,4 +736,81 @@ ol.text-white li::before {
 .contact-headings h1{
     font-size: 3rem;
     padding: 10px 0 80px 0;
+}
+
+.contact-section .card{
+    background-color: #e6ffdfce;
+}
+
+.contact-section .card{
+    min-height: 300px;
+}
+
+.contact-section .card .card-body{
+    margin-top: 80px;
+}
+
+.contact-section .card .card-body p{
+    color: #71b85f;
+    font-size: 18px;
+}
+
+.contact-icon{
+    position: absolute;
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    left: 0;
+    top: -18%;
+}
+
+
+.contact-icon .contact-icon-outer{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    background-color: #FFF;
+    color: #71b85f;
+}
+
+footer .location{
+    margin-bottom: -18px;
+}
+
+footer .contact{
+    font-size: 1.2rem;
+}
+
+footer .first-three-icon{
+    color: #71b85f;
+}
+
+footer .social-icon{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid #d3d3d3 ;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .social-icon:hover{
+    transform: scale(1.01);
+    border: none;
+    box-shadow: 2px 0px 5px #d4d4d4, 0px 2px 5px #d4d4d4, -2px 0px 5px #d4d4d4, -2px 0px 5px #d4d4d4;
+    cursor: pointer;
+}
+
+footer a, footer p{
+    color: #000;
+    text-decoration: none;
+    font-weight: 300;
+    font-size: 20px;
 }
