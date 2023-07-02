@@ -700,6 +700,8 @@ body::-webkit-scrollbar-thumb
     width: 120px;
 }
 
+
+/* ******** SELECTION CRITERIA ************ */
 .selection-main {
     background-color: #71b85f;
 
@@ -751,6 +753,9 @@ body::-webkit-scrollbar-thumb
 .article-card-text h3:hover{
     color: #ffcf31;
 }
+
+
+/* ****** CONTACT CARDS ******** */
 
 
 .contact-headings h6 {
@@ -943,8 +948,36 @@ footer a:hover{
         width: 50% !important;
     }
 
+    .best-doctor .doctor-text-container h2{
+        font-size: 18px !important;
+        text-align: left !important;
+    }
+
     .best-doctor .doctor-text-container p{
-        text-align: center;
+        text-align: left;
+        font-size: 14px;
+    }
+
+    /* ******* Reviews Container ******* */
+    .reviews h1{
+        font-size: 2rem !important;
+    }
+
+    .reviews .card{
+        min-width: 15rem;
+        font-size: 14px;
+    }
+
+    .reviews .card img{
+        width: 70%;
+    }
+
+    /* ******* INdian Laws ******* */
+    .indianLaws h1{
+        font-size: 1.5rem;
+    }
+    .indianLaws ul li{
+        font-size: 1rem;
     }
 
     /* ******* Latest blogs ******* */
