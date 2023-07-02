@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="sass/style.css">
 </head>
 
-<body>
+<body class="overflow-x-hidden">
     <nav class="navbar p-2 fixed-top navbar-expand-lg">
         <div class="container nav-logo">
             <a class="navbar-brand" style="user-select: none;" href="">ZOI</a>
@@ -57,81 +57,89 @@
     </nav>
 
 
-    <section class="carausel-section">
-        <div class="carousel slide" data-bs-ride="carousel">
+    <section class="carousel-section">
+        <div class="carousel-container d-flex align-items-center justify-content-center overflow-x-hidden">
+          <div class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
-                <div class="carousel-item active" data-bs-interval="3000">
-                    <img src="assets/carousel_img.png" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item" data-bs-interval="3000">
-                    <img src="assets/carousel_img2.png" class="d-block w-100" alt="...">
-                </div>
+              <div class="carousel-item active" data-bs-interval="3000">
+                <img src="assets/carousel_img.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item" data-bs-interval="3000">
+                <img src="assets/carousel_img2.png" class="d-block w-100" alt="...">
+              </div>
             </div>
+          </div>
         </div>
-    </section>
-
-    <section class="home-intro mt-5 mb-5">
-        <div class="wrapper d-flex row">
-            <div class="home-intro-left col-lg-6">
-                <div class="text-container">
-                    <h1 class="fw-medium">The Hope Begins Offer <br> IVF/ICSI for 21,000 AED only.</h1>
-                    <p class="text-dark text-opacity-75">New Hope Hospital | We present to you IVF/ICSI with 21,000 AED only, the offer is
-                        valid for a
-                        limited time.</p>
-                </div>
+      </section>
+    
+      <section class="home-intro mt-5 mb-5">
+        <div class="wrapper d-flex">
+          <div class="home-intro-left">
+            <div class="text-container">
+              <h1 class="fw-medium">The Hope Begins Offer <br> IVF/ICSI for 21,000 AED only.</h1>
+              <p class="text-dark text-opacity-75">New Hope Hospital | We present to you IVF/ICSI with 21,000 AED only, the
+                offer is
+                valid for a
+                limited time.</p>
             </div>
-
-            <div class="home-intro-right  col-lg-6">
-                <h1 class="mt-5 mb-3 fw-medium">Get the Best IVF Services</h1>
-                <div class="container d-flex overflow-auto">
-                    <div class="card border-0 text-center rounded-0">
-                        <div class="card-img">
-                            <img src="assets/iui-icon.png" alt="iui icon">
-                        </div>
-                        <div class="card-body">
-                            <p class="card-title fs-5 fw-bold text-black text-opacity-75">Egg Collection</p>
-                            <p class="card-text text-dark text-opacity-75">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, commodi.</p>
-                        </div>
-                    </div>
-                    <div class="card border-0 text-center rounded-0">
-                        <div class="card-img">
-                            <img src="assets/baby.png" alt="iui icon">
-                        </div>
-                        <div class="card-body">
-                            <p class="card-title fs-5 fw-bold text-black text-opacity-75">Embryo Transfer</p>
-                            <p class="card-text text-dark text-opacity-75">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, commodi.</p>
-                        </div>
-                    </div>
-                    <div class="card border-0 text-center rounded-0">
-                        <div class="card-img">
-                            <img src="assets/spermCollection.png" alt="iui icon">
-                        </div>
-                        <div class="card-body">
-                            <p class="card-title fs-5 fw-bold text-black text-opacity-75">Blastocyst Transfer</p>
-                            <p class="card-text text-dark text-opacity-75">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, commodi.</p>
-                        </div>
-                    </div>
-                    <div class="card border-0 text-center rounded-0">
-                        <div class="card-img">
-                            <img src="assets/spermRace.png" alt="iui icon">
-                        </div>
-                        <div class="card-body">
-                            <p class="card-title fs-5 fw-bold text-black text-opacity-75">Male Fertility Treatments</p>
-                            <p class="card-text text-dark text-opacity-75">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, commodi.</p>
-                        </div>
-                    </div>
-                    <div class="card border-0 text-center rounded-0">
-                        <div class="card-img">
-                            <img src="assets/iui-icon.png" alt="iui icon">
-                        </div>
-                        <div class="card-body">
-                            <p class="card-title fs-5 fw-bold text-black text-opacity-75">Egg Collection</p>
-                            <p class="card-text text-dark text-opacity-75">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, commodi.</p>
-                        </div>
-                    </div>
+          </div>
+    
+          <div class="home-intro-right overflow-auto">
+            <h1 class="mt-5 mb-3 fw-medium">Get the Best IVF Services</h1>
+            <div class="card-container d-flex overflow-auto">
+              <div class="card border-0 text-center rounded-0">
+                <div class="card-img">
+                  <img src="assets/iui-icon.png" alt="iui icon">
                 </div>
+                <div class="card-body">
+                  <p class="card-title fs-5 fw-bold text-black text-opacity-75">Egg Collection</p>
+                  <p class="card-text text-dark text-opacity-75">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Possimus, commodi.</p>
+                </div>
+              </div>
+              <div class="card border-0 text-center rounded-0">
+                <div class="card-img">
+                  <img src="assets/baby.png" alt="iui icon">
+                </div>
+                <div class="card-body">
+                  <p class="card-title fs-5 fw-bold text-black text-opacity-75">Embryo Transfer</p>
+                  <p class="card-text text-dark text-opacity-75">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Possimus, commodi.</p>
+                </div>
+              </div>
+              <div class="card border-0 text-center rounded-0">
+                <div class="card-img">
+                  <img src="assets/spermCollection.png" alt="iui icon">
+                </div>
+                <div class="card-body">
+                  <p class="card-title fs-5 fw-bold text-black text-opacity-75">Blastocyst Transfer</p>
+                  <p class="card-text text-dark text-opacity-75">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Possimus, commodi.</p>
+                </div>
+              </div>
+              <div class="card border-0 text-center rounded-0">
+                <div class="card-img">
+                  <img src="assets/spermRace.png" alt="iui icon">
+                </div>
+                <div class="card-body">
+                  <p class="card-title fs-5 fw-bold text-black text-opacity-75">Male Fertility Treatments</p>
+                  <p class="card-text text-dark text-opacity-75">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Possimus, commodi.</p>
+                </div>
+              </div>
+              <div class="card border-0 text-center rounded-0">
+                <div class="card-img">
+                  <img src="assets/iui-icon.png" alt="iui icon">
+                </div>
+                <div class="card-body">
+                  <p class="card-title fs-5 fw-bold text-black text-opacity-75">Egg Collection</p>
+                  <p class="card-text text-dark text-opacity-75">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Possimus, commodi.</p>
+                </div>
+              </div>
             </div>
-    </section>
+          </div>
+      </section>
 
 
 
@@ -451,7 +459,7 @@
     <div class="indianLaws container p-5">
         <div class="indianLawsWrapper shadow text-center rounded p-4">
             <h1>What are the Indian Laws applicable for you</h1>
-            <ul>
+            <ul class="mt-5">
                 <li>
                     <i class="fa fa-caret-right text-warning" aria-hidden="true" style="font-size: 2em;"></i>
                     You have to be a married couple. Need a marriage certificate

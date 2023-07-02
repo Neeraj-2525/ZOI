@@ -17,6 +17,7 @@ body::-webkit-scrollbar-track
 
 body::-webkit-scrollbar
 {
+    height: 10px;
 	width: 10px;
 	background-color: #F5F5F5;
 }
@@ -33,6 +34,7 @@ body::-webkit-scrollbar-thumb
 .navbar {
     background-color: #71b85f;
     /* backdrop-filter: blur(3px); */
+    width: 100%;
     transition: all 0.5s ease-in-out;
 }
 
@@ -63,19 +65,29 @@ body::-webkit-scrollbar-thumb
     font-size: 20px;
 }
 
+.navbar-toggler-icon {
+    color: red !important; /* Replace 'red' with your desired color */
+  }
 
-.dropdown-menu {
-    background: red;
-    backdrop-filter: blur(4px);
-}
-
-.dropdown-menu li a {
+.dropdown-menu a{
     color: black;
 }
 
+.dropdown-menu a:hover{
+    color: #71b85f !important;
+
+}
+
+.dropdown-menu a:focus{
+    background-color: #71b85f !important;
+    color: #FFF !important;
+}
+
 /* ********** caraousel ********** */
-.carausel-section{
+.carousel-container{
     margin-top: 88px;
+    cursor: pointer;
+    width: 100vw;
 }
 
 
@@ -88,6 +100,7 @@ body::-webkit-scrollbar-thumb
     background-image: url(assets/baby.svg);
     background-repeat: no-repeat;
     background-position-x: right;  
+    min-width: 50%;
 }
 
 .home-intro-left .text-container{
@@ -105,22 +118,26 @@ body::-webkit-scrollbar-thumb
     font-size: 1.5rem;
 }
 
+.home-intro-right{
+    cursor: pointer;
+}
 
-.home-intro-right .container::-webkit-scrollbar-track
+
+.home-intro-right .card-container::-webkit-scrollbar-track
 {
 	/* border: 1px solid #71b85f; */
 	background-color: #FFF;
 }
 
 
-.home-intro-right .container::-webkit-scrollbar
+.home-intro-right .card-container::-webkit-scrollbar
 {
     height: 5px;
 	background-color: #F5F5F5;
 }
 
 
-.home-intro-right .container::-webkit-scrollbar-thumb
+.home-intro-right .card-container::-webkit-scrollbar-thumb
 {
 	background-color: #71b85f;	
     border-radius: 10px;
@@ -156,9 +173,7 @@ body::-webkit-scrollbar-thumb
 }
 
 
-.carausel-section .carousel-item img{
-    /* height: 700px; */
-}
+/* ********** vs table ************ */
 
 .table-caption {
     color: #000;
@@ -393,6 +408,7 @@ body::-webkit-scrollbar-thumb
 
 .reviews .card {
     min-width: 20rem;
+    cursor: pointer;
 }
 
 .card-deck {
@@ -418,9 +434,12 @@ body::-webkit-scrollbar-thumb
 
 .indianLaws ul li {
     display: flex;
-    gap: 10px;
-    align-items: center;
+    gap: 20px;
     font-size: 1.5rem;
+}
+
+.indianLaws ul li i{
+    margin-top: -6px;
 }
 
 /* ********* OUR SERVICES ********** */
@@ -433,10 +452,10 @@ body::-webkit-scrollbar-thumb
     min-height: 100vh;
 }
 
-a,
-a:hover,
-a:focus,
-a:active {
+.we-offer-area a,
+.we-offer-area a:hover,
+.we-offer-area a:focus,
+.we-offer-area a:active {
     text-decoration: none;
     outline: none;
 }
@@ -863,3 +882,84 @@ footer a, footer p{
 footer a:hover{
     color: #71b85f;
 }
+
+
+/* %%%%%%%%%%%%% MEDIA QUERIES %%%%%%%%%%%%% */
+
+@media(max-width:767px) {
+    /* ********home intro******* */
+    .home-intro .wrapper{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .home-intro-left{
+        background-size: contain;
+        background-position: center;
+    }
+
+    .home-intro-left .text-container{
+        width: 100%;
+        height: 100%;
+        padding: 10px;
+        background-image: linear-gradient(to bottom, #ffffff93 5%, #ffffffd5, #ffffff);
+        text-shadow: 1px 1px 5px rgba(179, 179, 179, 0.623);
+    }
+
+    .home-intro-right h1{
+        font-size: 2.5rem;
+    }
+
+    .home-intro-right .card{
+        min-width: 40vw;
+        padding: 50px 0px;
+    }
+
+    /* ******* vs table ******* */
+    .table-caption {
+        font-size: 2rem;
+        margin: 40px 0;
+    }
+
+    /* ******** Dr yashodhara ******** */
+    .best-doctor{
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .best-doctor .dr-yashodhra-img{
+        background-color: #71b85f;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        box-shadow: 2px 2px 5px #9b9b9b, -2px 2px 5px #9b9b9b, 0px -2px 5px #9b9b9b;
+    }
+
+    .best-doctor .dr-yashodhra-img img{
+        width: 50% !important;
+    }
+
+    .best-doctor .doctor-text-container p{
+        text-align: center;
+    }
+
+    /* ******* Latest blogs ******* */
+    .article-section .article-heading h1{
+        font-size: 2.5rem;
+    }
+
+    /* ******** contact cards ********* */
+    .contact-section .card{
+        margin-bottom: 60px;
+    }
+
+    /* *********** FOOTER *********** */
+    footer .footer-wrapper{
+        flex-direction: column;
+        gap: 50px;
+    }
+}
+
